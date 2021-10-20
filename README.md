@@ -1,4 +1,8 @@
 # Glue Workflow
+
+https://awsfeed.com/whats-new/architecture/field-notes-how-to-build-an-aws-glue-workflow-using-the-aws-cloud-development-kit
+
+# Glue Workflow
 <!--BEGIN STABILITY BANNER-->
 ---
 
