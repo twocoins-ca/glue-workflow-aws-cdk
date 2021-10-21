@@ -2,6 +2,8 @@
 
 https://awsfeed.com/whats-new/architecture/field-notes-how-to-build-an-aws-glue-workflow-using-the-aws-cloud-development-kit
 
+https://aws.amazon.com/blogs/big-data/a-public-data-lake-for-analysis-of-covid-19-data/
+
 # Glue Workflow
 <!--BEGIN STABILITY BANNER-->
 ---

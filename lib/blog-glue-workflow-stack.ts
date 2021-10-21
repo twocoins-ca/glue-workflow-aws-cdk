@@ -392,37 +392,37 @@ export class BlogGlueWorkFlowStack extends cdk.Stack {
     );
 
     //create Glue job trigger to load output data into Redshift
-    const glue_trigger_redshiftJob = new glue.CfnTrigger(
-      this,
-      "glue-trigger-redshiftJob",
-      {
-        name: "Run-Job-" + glue_job_redshift_load.name,
-        workflowName: glue_workflow.name,
-        actions: [
-          {
-            jobName: glue_job_redshift_load.name,
-          },
-        ],
-        predicate: {
-          conditions: [
-            {
-              logicalOperator: "EQUALS",
-              crawlerName: glue_crawler_s3_parquet.name,
-              crawlState: "SUCCEEDED",
-            },
-          ],
-          logical: "ANY",
-        },
-        type: "CONDITIONAL",
-        startOnCreation: true,
-      }
-    );
+    // const glue_trigger_redshiftJob = new glue.CfnTrigger(
+    //   this,
+    //   "glue-trigger-redshiftJob",
+    //   {
+    //     name: "Run-Job-" + glue_job_redshift_load.name,
+    //     workflowName: glue_workflow.name,
+    //     actions: [
+    //       {
+    //         jobName: glue_job_redshift_load.name,
+    //       },
+    //     ],
+    //     predicate: {
+    //       conditions: [
+    //         {
+    //           logicalOperator: "EQUALS",
+    //           crawlerName: glue_crawler_s3_parquet.name,
+    //           crawlState: "SUCCEEDED",
+    //         },
+    //       ],
+    //       logical: "ANY",
+    //     },
+    //     type: "CONDITIONAL",
+    //     startOnCreation: true,
+    //   }
+    // );
 
     //add trigger dependency on workflow, job and crawler
     glue_trigger_crawlJob.addDependsOn(glue_job_asset);
     glue_trigger_parquetJob.addDependsOn(glue_trigger_crawlJob);
     glue_trigger_crawlJob_parquet.addDependsOn(glue_trigger_parquetJob);
-    glue_trigger_redshiftJob.addDependsOn(glue_trigger_crawlJob_parquet);
+    // glue_trigger_redshiftJob.addDependsOn(glue_trigger_crawlJob_parquet);
   }
 }
 

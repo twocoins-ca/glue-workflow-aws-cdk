@@ -11,15 +11,15 @@ import { RedshiftVpcStack } from '../lib/blog-redshift-vpc-stack';
 
 const app = new cdk.App();
 
-const workflow_stack = new BlogGlueWorkFlowStack(app, 'workflow-stack', {
-  stackName: 'workflow-stack',
+const workflow_stack = new BlogGlueWorkFlowStack(app, 'barrie-x1-glue-workflow-a-stack', {
+  stackName: 'barrie-x1-glue-workflow-a-stack',
   description: 'creates the Glue workflow, Crawlers, Jobs and triggers'
 });
 
-const redshift_vpc_stack = new RedshiftVpcStack(app, 'redshift-vpc-stack', {
-  glueRoleGrantSecretRead: workflow_stack.glueRole,
-  stackName: 'redshift-vpc-stack',
-  description: 'creates the VPC, Glue Connection, and Redshift cluster'
-})
+// const redshift_vpc_stack = new RedshiftVpcStack(app, 'redshift-vpc-stack', {
+//   glueRoleGrantSecretRead: workflow_stack.glueRole,
+//   stackName: 'redshift-vpc-stack',
+//   description: 'creates the VPC, Glue Connection, and Redshift cluster'
+// })
 
 
