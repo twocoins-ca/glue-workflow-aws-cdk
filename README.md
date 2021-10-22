@@ -4,6 +4,18 @@ https://awsfeed.com/whats-new/architecture/field-notes-how-to-build-an-aws-glue-
 
 https://aws.amazon.com/blogs/big-data/a-public-data-lake-for-analysis-of-covid-19-data/
 
+## Building Data Lakes
+![image](https://user-images.githubusercontent.com/91735129/138469773-49a6dfd2-b8a6-41fc-95d4-25d3703158d7.png)
+
+
+## Loading data warehouses
+![image](https://user-images.githubusercontent.com/91735129/138469649-5b07e6bc-2ecb-45f2-a213-48018c9ac5e0.png)
+
+## Data preparation for AI/ML and data science
+![image](https://user-images.githubusercontent.com/91735129/138469574-db40645c-23ac-4875-ac53-652f563049cb.png)
+
+
+
 # Glue Workflow
 <!--BEGIN STABILITY BANNER-->
 ---
