@@ -4,6 +4,7 @@ https://awsfeed.com/whats-new/architecture/field-notes-how-to-build-an-aws-glue-
 
 https://aws.amazon.com/blogs/big-data/a-public-data-lake-for-analysis-of-covid-19-data/
 
+# Use Cases
 ## Building Data Lakes
 ![image](https://user-images.githubusercontent.com/91735129/138469773-49a6dfd2-b8a6-41fc-95d4-25d3703158d7.png)
 
